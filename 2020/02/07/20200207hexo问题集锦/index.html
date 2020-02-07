@@ -22,15 +22,17 @@
 <meta name="keywords" content="hexo,重大问题集锦,持续更新。。。。。。" />
 
 
-<meta name="description" content="
-问题–hexo博客样式加载不出来
-解决思路：
+<meta name="description" content="问题–hexo博客样式加载不出来
+收获
 
-F12查看报错信息，发现大多数都是Css和js问题初步判断是渲染出现问题
-询问相关人员，考虑是路径问题。
-寻找关键字
-问题解决
-有待深挖内部逻辑..." />
+开源中国社区
+
+hexo命令集成
+
+@echo off
+D:
+cd D:\BlogNoteBook\BlogForZaiZai20200205
+hexo..." />
 
 
 <meta name="robots" content="all" />
@@ -185,9 +187,28 @@ F12查看报错信息，发现大多数都是Css和js问题初步判断是渲染
     </div>
     
     <div class="post-body post-content">
-        <ol>
-<li><p>问题–hexo博客样式加载不出来</p>
-<p>解决思路：</p>
+        <h4 id="问题–hexo博客样式加载不出来"><a href="#问题–hexo博客样式加载不出来" class="headerlink" title="问题–hexo博客样式加载不出来"></a>问题–hexo博客样式加载不出来</h4><ul>
+<li><p>收获</p>
+<ul>
+<li><p><a href="https://tool.oschina.net/" target="_blank" rel="noopener">开源中国社区</a></p>
+</li>
+<li><p>hexo命令集成</p>
+<ul>
+<li><pre><code>@echo off
+D:
+cd D:\BlogNoteBook\BlogForZaiZai20200205
+hexo clean&amp;&amp;hexo g&amp;&amp;hexo s</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>解决思路：</li>
+</ul>
+</li>
+</ul>
 <ol>
 <li>F12查看报错信息，发现大多数都是Css和js问题初步判断是渲染出现问题</li>
 <li>询问相关人员，考虑是路径问题。</li>
@@ -195,9 +216,19 @@ F12查看报错信息，发现大多数都是Css和js问题初步判断是渲染
 <li>问题解决</li>
 <li>有待深挖内部逻辑</li>
 </ol>
+<h4 id="本地预览地址被占用"><a href="#本地预览地址被占用" class="headerlink" title="本地预览地址被占用"></a>本地预览地址被占用</h4><ul>
+<li>收获</li>
+<li>解决思路<ul>
+<li><a href="https://segmentfault.com/q/1010000008546859?_ea=1678427" target="_blank" rel="noopener">_修改config配置</a></li>
+<li>命令行方法<ol>
+<li>先<code>netstat -ant |grep 4000</code> 看看被什么占用了,然后如果这个是没人用的东西,就kill掉这个进程</li>
+<li>通过 hexo server -p 5000 命令来指定端口</li>
+</ol>
+</li>
+</ul>
 </li>
 <li></li>
-</ol>
+</ul>
 
     </div>
     
@@ -261,7 +292,7 @@ new Valine({
             Table of Contents
         </h3>
         
-        <p>暂无目录</p>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题–hexo博客样式加载不出来"><span class="toc-text">问题–hexo博客样式加载不出来</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#本地预览地址被占用"><span class="toc-text">本地预览地址被占用</span></a></li></ol>
         
     </div>
 </aside>
